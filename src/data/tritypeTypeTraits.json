@@ -1,0 +1,128 @@
+{
+  "1": {
+    "table_title": "改善自我的特征",
+    "traits": {
+      "energy_direction": "面向内部的原则与秩序",
+      "fear": "犯错、变坏、不道德或堕落",
+      "desire": "成为优秀、正确且完美的人",
+      "characteristic": "追求客观标准并努力改善现实",
+      "strength": "极具理性、客观且宽容的道德勇气",
+      "weakness": "教条主义、苛刻且压抑内心的愤怒",
+      "to_get_what_they_want": "顺从型（遵循超我与规则）",
+      "when_frustrated": "能力组（断绝情感，以逻辑解决）",
+      "object_relations": "挫折型（对现实不完美的持续改进）"
+    }
+  },
+  "2": {
+    "table_title": "助人自我的特征",
+    "traits": {
+      "energy_direction": "面向外部的他人需求",
+      "fear": "毫无价值、不被需要或被拒绝",
+      "desire": "感受到被爱、被需要并对他人有价值",
+      "characteristic": "深切共情并主动提供照顾与支持",
+      "strength": "充满无条件的爱、无私且体贴",
+      "weakness": "具有操控性、强求回报与情感依赖",
+      "to_get_what_they_want": "顺从型（通过服务他人获取关注）",
+      "when_frustrated": "积极期待组（强调自身善意，忽略需求）",
+      "object_relations": "拒绝型（压抑自身需求以避免被拒绝）"
+    }
+  },
+  "3": {
+    "table_title": "成就自我的特征",
+    "traits": {
+      "energy_direction": "面向外界的目标与期望",
+      "fear": "失败、无能、平庸或失去价值",
+      "desire": "获得成功、成就与外界的赞赏",
+      "characteristic": "高效目标导向与极强的环境适应力",
+      "strength": "高度自信、真实且富有魅力的推动者",
+      "weakness": "虚荣、自欺欺人与过度在意形象",
+      "to_get_what_they_want": "张扬型（积极追求个人目标与地位）",
+      "when_frustrated": "能力组（压抑情感，保持高效专业）",
+      "object_relations": "依恋型（调整自我以符合社会价值）"
+    }
+  },
+  "4": {
+    "table_title": "表现自我的特征",
+    "traits": {
+      "energy_direction": "深入内向的个人情感",
+      "fear": "平庸、有缺陷、被情感抛弃或泯然众人",
+      "desire": "成为独特、深刻且真实的人",
+      "characteristic": "探索独特内在与艺术化的情感表达",
+      "strength": "极具创造力、高度自省且情感真挚",
+      "weakness": "自我放纵、忧郁、嫉妒与情感隔离",
+      "to_get_what_they_want": "退缩型（退回幻想中维持独特自我）",
+      "when_frustrated": "应激组（寻找情感支持，情绪化反应）",
+      "object_relations": "挫折型（追求理想化自我，对现实不满）"
+    }
+  },
+  "5": {
+    "table_title": "探究自我的特征",
+    "traits": {
+      "energy_direction": "退缩并抽离于外部世界",
+      "fear": "无知、被外界入侵吞噬或显得无能",
+      "desire": "敏锐、知识渊博且具有独立能力",
+      "characteristic": "理性分析与独立思考的探索精神",
+      "strength": "非凡的洞察力、高度客观且专注",
+      "weakness": "极度孤僻、愤世嫉俗与情感割裂",
+      "to_get_what_they_want": "退缩型（减少需求，退入思维迷宫）",
+      "when_frustrated": "能力组（剥离情感，以智力解决问题）",
+      "object_relations": "拒绝型（退缩以防被他人拒绝或消耗）"
+    }
+  },
+  "6": {
+    "table_title": "忠诚自我的特征",
+    "traits": {
+      "energy_direction": "向外寻找支持与向内反复验证",
+      "fear": "失去指引和支持、陷入孤立或面临危险",
+      "desire": "获得安全感、稳定以及可靠的同盟",
+      "characteristic": "评估潜在危机与维持阵营的平衡",
+      "strength": "勇敢、极度可靠、尽责且具合作精神",
+      "weakness": "焦虑、多疑、偏执与反应过度",
+      "to_get_what_they_want": "顺从型（遵循超我与群体规则）",
+      "when_frustrated": "应激组（通过情绪反应测试他人忠诚）",
+      "object_relations": "依恋型（依附于可靠体系或信仰以求安全）"
+    }
+  },
+  "7": {
+    "table_title": "享受自我的特征",
+    "traits": {
+      "energy_direction": "快速外向的新鲜体验",
+      "fear": "受到限制、陷入痛苦、无聊或错失良机",
+      "desire": "获得快乐、自由并体验生活的多样性",
+      "characteristic": "追求积极体验与多重可能性的开拓者",
+      "strength": "充满感染力、富有远见且懂得感恩",
+      "weakness": "冲动、贪婪、过度放纵与精力分散",
+      "to_get_what_they_want": "张扬型（积极向外索取快乐与刺激）",
+      "when_frustrated": "积极期待组（转移注意力，寻找光明面）",
+      "object_relations": "挫折型（理想化体验，对当下限制不满）"
+    }
+  },
+  "8": {
+    "table_title": "挑战自我的特征",
+    "traits": {
+      "energy_direction": "向外扩张与直接对抗",
+      "fear": "软弱、被他人控制、显得脆弱或任人宰割",
+      "desire": "强大、自主并绝对掌控自己的命运",
+      "characteristic": "果断行动、保护弱者及迎击不公",
+      "strength": "宽宏大量、充满力量、果断且具英雄气概",
+      "weakness": "专横、好斗、控制欲极强与冷酷无情",
+      "to_get_what_they_want": "张扬型（通过对抗和掌控获取所需）",
+      "when_frustrated": "应激组（公开表达愤怒，快速采取行动）",
+      "object_relations": "拒绝型（建立坚强边界以防被背叛）"
+    }
+  },
+  "9": {
+    "table_title": "和解自我的特征",
+    "traits": {
+      "energy_direction": "融合内外部，化解边界",
+      "fear": "冲突、与人分离、被忽视或身处不和谐环境",
+      "desire": "维持内在的平静与外在的和平",
+      "characteristic": "调解分歧并包容所有视角的适应力",
+      "strength": "极具包容力、稳重、平和且具疗愈力",
+      "weakness": "极度被动、固执、麻木与消极抵抗",
+      "to_get_what_they_want": "退缩型（退回内在舒适区避免冲突）",
+      "when_frustrated": "积极期待组（淡化问题，维持表面和谐）",
+      "object_relations": "依恋型（通过顺应和融合获取连接）"
+    }
+  }
+}

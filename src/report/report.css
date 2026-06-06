@@ -1,0 +1,2566 @@
+/* INSIGHT BOOK 报告样式（与样例 PDF 封面对齐） */
+
+.report-shell {
+  min-height: 100vh;
+  background: #e8e8e8;
+  padding: 16px 12px 32px;
+}
+
+.report-shell__toolbar {
+  max-width: 820px;
+  margin: 0 auto 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  padding: 10px 14px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.875rem;
+  color: #444;
+}
+
+.report-shell__toolbar a {
+  color: #3d5a80;
+  text-decoration: none;
+}
+
+.report-shell__toolbar a:hover {
+  text-decoration: underline;
+}
+
+.report-shell__status {
+  max-width: 820px;
+  margin: 0 auto 10px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  color: #2e7d32;
+  background: #e8f5e9;
+  border-radius: 8px;
+}
+
+.report-shell__status--err {
+  color: #c62828;
+  background: #ffebee;
+}
+
+.report-shell__toolbar .report-shell__badge {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #e3f2fd;
+  color: #1565c0;
+  font-size: 0.8rem;
+}
+
+.report-document {
+  max-width: 794px;
+  margin: 0 auto;
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 8px 0 40px;
+}
+
+.report-document > .report-page {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.14);
+}
+
+.report-document:has(.report-overview) {
+  max-width: 210mm;
+}
+
+.report-page {
+  padding: 48px 56px 40px;
+  min-height: 1123px;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* —— 封面 M00 —— */
+
+.report-cover {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-cover__brand {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.report-cover__logo {
+  color: #4a7ab5;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.report-cover__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #2c2c2c;
+}
+
+.report-cover__subtitle {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.report-cover__meta {
+  border: 1px solid #c5c5c5;
+  padding: 20px 24px;
+  margin-bottom: 28px;
+}
+
+.report-cover__meta-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+}
+
+.report-cover__meta-row + .report-cover__meta-row {
+  margin-top: 14px;
+}
+
+.report-cover__meta-row--single {
+  grid-template-columns: 1fr;
+}
+
+.report-cover__meta-item {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.report-cover__bullet {
+  color: #333;
+  margin-right: 4px;
+  font-size: 0.65rem;
+  vertical-align: middle;
+}
+
+.report-cover__highlight {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 24px;
+  color: #2a2a2a;
+}
+
+.report-cover__intro-box {
+  background: #e8f4fc;
+  padding: 28px 32px;
+  flex: 1;
+  margin-bottom: 32px;
+}
+
+.report-cover__intro-box p {
+  margin: 0 0 1em;
+  text-align: justify;
+}
+
+.report-cover__intro-box p:last-child {
+  margin-bottom: 0;
+}
+
+.report-cover__brand-word {
+  color: #4a7ab5;
+  font-weight: 700;
+}
+
+.report-cover__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+}
+
+.report-cover__footer-brand {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #2c2c2c;
+  flex-shrink: 0;
+}
+
+.report-cover__footer-legal {
+  text-align: right;
+  font-size: 0.7rem;
+  color: #888;
+  line-height: 1.5;
+  max-width: 420px;
+}
+
+.report-cover__footer-legal p {
+  margin: 0 0 4px;
+}
+
+/* —— 内页正式页头（样例图 2 / I-Book 条） —— */
+
+.report-sheet-header-wrap {
+  flex-shrink: 0;
+  margin-bottom: 2.5mm;
+}
+
+.report-sheet-header__ibook-strip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2mm 3mm;
+  background: #ececec;
+  border-top: 2px solid #555;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 2mm;
+}
+
+.report-sheet-header__ibook-text {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.02em;
+}
+
+.report-sheet-header__bullet {
+  font-size: 8px;
+  color: #333;
+  line-height: 1;
+}
+
+.report-sheet-header {
+  display: grid;
+  grid-template-columns: 32mm 1fr;
+  gap: 4mm;
+  align-items: stretch;
+}
+
+.report-sheet-header__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4a7ab5;
+  padding: 1mm 0;
+}
+
+.report-sheet-header__brand-tag {
+  margin: 0 0 1mm;
+  font-size: 9px;
+  color: #555;
+  line-height: 1.2;
+}
+
+.report-sheet-header__brand-name {
+  margin: 1mm 0 0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.report-sheet-header__panel {
+  border-top: 2.5px solid #444;
+  border-bottom: 2.5px solid #444;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-sheet-header__panel-title {
+  padding: 2mm 3mm;
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+  border-bottom: 1px solid #bbb;
+  background: #fafafa;
+}
+
+.report-sheet-header__panel-body {
+  flex: 1;
+  padding: 2mm 3mm;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5mm 6mm;
+  font-size: 11.5px;
+  color: #333;
+}
+
+.report-sheet-header__panel-body p {
+  margin: 0;
+}
+
+.report-sheet-header__panel-extra {
+  font-weight: 600;
+  color: #4a7ab5;
+}
+
+/* —— 第 2 页：九型总览（单页 A4，铺满版面） —— */
+
+.report-page.report-overview {
+  width: 210mm;
+  max-width: 210mm;
+  min-height: 297mm;
+  height: 297mm;
+  padding: 5mm 7mm 4mm;
+  font-size: 10.5px;
+  line-height: 1.35;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.report-overview__types {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 0;
+  padding: 1mm 0;
+}
+
+.report-type-card {
+  flex: 0 1 auto;
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-type-card__head {
+  text-align: center;
+  padding: 1.2mm 2mm 1mm;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.report-type-card__title {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.3;
+}
+
+.report-type-card__subtitle {
+  font-weight: 500;
+  font-size: 9.5px;
+  color: #666;
+}
+
+.report-type-card__intro {
+  margin: 0.4mm 0 0;
+  font-size: 9px;
+  color: #444;
+  line-height: 1.3;
+}
+
+.report-type-card__grid {
+  display: grid;
+  grid-template-columns: 28mm 1fr 28mm;
+  align-items: center;
+  flex: 1;
+}
+
+.report-type-card__side {
+  padding: 1.8mm 2mm;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-type-card__side--low {
+  border-right: 1px solid #ddd;
+}
+
+.report-type-card__side--high {
+  border-left: 1px solid #ddd;
+  text-align: right;
+}
+
+.report-type-card__side-title {
+  margin: 0 0 0.8mm;
+  font-size: 8px;
+  font-weight: 700;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.report-type-card__side--high .report-type-card__side-title {
+  text-align: right;
+}
+
+.report-type-card__keywords {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2mm;
+  row-gap: 0.6mm;
+  flex: 1;
+  align-content: center;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #333;
+}
+
+.report-type-card__side--high .report-type-card__keywords {
+  direction: rtl;
+}
+
+.report-type-card__side--high .report-type-card__keywords li {
+  direction: ltr;
+}
+
+.report-type-card__keywords li {
+  margin: 0;
+}
+
+.report-type-card__chart {
+  padding: 2mm 2.5mm 1.5mm;
+  background: #f7f7f7;
+}
+
+.report-type-card__chart-area {
+  position: relative;
+  height: 13px;
+  margin-bottom: 1.5px;
+}
+
+.report-type-card__gridlines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.report-type-card__gridline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.12);
+  transform: translateX(-50%);
+}
+
+.report-type-card__bar {
+  position: relative;
+  z-index: 1;
+  height: 13px;
+  min-width: 32px;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.report-type-card__bar-name {
+  font-size: 8px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.report-type-card__bar-score {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.report-type-card__ticks {
+  position: relative;
+  height: 10px;
+  font-size: 7px;
+  color: #777;
+}
+
+.report-type-card__tick {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.report-page__footer-mini--compact {
+  flex-shrink: 0;
+  margin-top: 2mm;
+  padding-top: 1.2mm;
+  border-top: 1px solid #ccc;
+  font-size: 8.5px;
+}
+
+/* —— 第 3 页：PPAP 摘要（折线图） —— */
+
+.report-page.report-ppap {
+  width: 210mm;
+  max-width: 210mm;
+  min-height: 297mm;
+  height: auto;
+  padding: 5mm 7mm 4mm;
+  font-size: 10.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-ppap__chart-block {
+  flex: 1;
+  margin-top: 2mm;
+}
+
+.report-ppap__section-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2mm 3mm;
+  background: #ececec;
+  border-top: 2px solid #555;
+  border-bottom: 1px solid #bbb;
+}
+
+.report-ppap__section-bullet {
+  font-size: 7px;
+  color: #333;
+}
+
+.report-ppap__section-title {
+  font-weight: 800;
+  font-size: 11px;
+  color: #222;
+}
+
+.report-ppap__section-subtitle {
+  flex: 1;
+  text-align: center;
+  font-weight: 700;
+  font-size: 11px;
+  color: #222;
+}
+
+.report-ppap__chart-panel {
+  padding: 4mm 2mm 4mm;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.score-line-chart {
+  width: 100%;
+  background: #fff;
+}
+
+.score-line-chart__svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.score-line-chart__grid-h {
+  stroke: #e0e0e0;
+  stroke-width: 1;
+}
+
+.score-line-chart__baseline {
+  stroke: #444;
+  stroke-width: 1.25;
+}
+
+.score-line-chart__axis-y {
+  font-size: 9px;
+  fill: #666;
+}
+
+.score-line-chart__line {
+  stroke: #2c4a6e;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.score-line-chart__dot {
+  fill: #2c4a6e;
+}
+
+.score-line-chart__value {
+  font-size: 11px;
+  font-weight: 700;
+  fill: #2c4a6e;
+}
+
+.score-line-chart__axis-x {
+  font-size: 8px;
+  fill: #333;
+}
+
+/* PPAP 三中心横排（紧接折线图下方，对齐样例） */
+.ppap-centers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #bbb;
+  margin-top: 2mm;
+  background: #fff;
+}
+
+.ppap-centers__col {
+  display: grid;
+  grid-template-columns: 10mm 1fr;
+  min-height: 22mm;
+  border-right: 1px solid #bbb;
+}
+
+.ppap-centers__col:last-child {
+  border-right: none;
+}
+
+.ppap-centers__axis {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e8e8;
+  font-weight: 800;
+  font-size: 11px;
+  color: #333;
+  letter-spacing: 0.15em;
+  border-right: 1px solid #bbb;
+}
+
+.ppap-centers__content {
+  padding: 2.5mm 3mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.ppap-centers__type-title {
+  margin: 0 0 1.5mm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 800;
+  color: #222;
+}
+
+.ppap-centers__type-line {
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.ppap-centers__self-line {
+  font-size: 9px;
+  line-height: 1.3;
+  margin-top: 0.5mm;
+}
+
+.ppap-centers__paragraph {
+  margin: 0;
+  font-size: 8.5px;
+  line-height: 1.45;
+  color: #333;
+  text-align: justify;
+}
+
+/* PPAP 九型雷达图（样例：蓝实线=分数，绿/红虚线=参考区） */
+.score-radar-chart {
+  width: 100%;
+  margin-top: 0.75mm; /* 原 3mm，缩小 75% */
+  padding: 0.5mm 0 2mm; /* 顶部 2mm→0.5mm */
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+/* 铺满 PPAP 面板宽度，绘图直径 ≈ 画布宽度 52%（≥ A4 可印区一半） */
+.score-radar-chart__svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.score-radar-chart__ring,
+.score-radar-chart__spoke {
+  fill: none;
+  stroke: #333;
+  stroke-width: 0.8;
+}
+
+.score-radar-chart__scale-tick {
+  stroke: #333;
+  stroke-width: 0.8;
+}
+
+.score-radar-chart__scale {
+  font-size: 9px;
+  fill: #222;
+  font-weight: 700;
+}
+
+.score-radar-chart__ref-high {
+  fill: none;
+  stroke: #3a8f4a;
+  stroke-width: 1.25;
+  stroke-dasharray: 6 4;
+  stroke-linejoin: round;
+}
+
+.score-radar-chart__ref-low {
+  fill: none;
+  stroke: #c53b3b;
+  stroke-width: 1.25;
+  stroke-dasharray: 6 4;
+  stroke-linejoin: round;
+}
+
+.score-radar-chart__data {
+  fill: rgba(44, 74, 110, 0.06);
+  stroke: #2c4a6e;
+  stroke-width: 5.5;
+  stroke-linejoin: round;
+}
+
+.score-radar-chart__label {
+  font-size: 8px;
+  fill: #222;
+  font-weight: 700;
+}
+
+/* —— 第 4 页：三中心三角关系（27 种映射） —— */
+
+.report-page.report-tritype {
+  width: 210mm;
+  max-width: 210mm;
+  min-height: 297mm;
+  height: auto;
+  padding: 5mm 4mm 4mm;
+  font-size: 10.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-tritype__block {
+  flex: 1;
+  margin-top: 2mm;
+}
+
+.report-tritype__panel {
+  padding: 1mm 1.5mm 1.3mm;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: visible;
+}
+
+.report-tritype__missing {
+  margin: 12mm 0;
+  text-align: center;
+  color: #c62828;
+  font-size: 11px;
+}
+
+/* 三角图：较样例缩小约 1/3，三角顶点钉住三框 */
+.ppap-tritype {
+  width: 80mm;
+  max-width: 80mm;
+  margin: 1mm auto 0.7mm;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.ppap-tritype__stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 400 / 240;
+  max-height: 48mm;
+  margin: 0 auto;
+}
+
+.ppap-tritype__frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* 白色隐形三角：与页面同色，撑开布局并定义顶点 */
+.ppap-tritype__ghost {
+  fill: #fff;
+  stroke: none;
+}
+
+.ppap-tritype__edges {
+  fill: none;
+}
+
+.ppap-tritype__edge-line {
+  stroke: #333;
+  stroke-width: 1;
+}
+
+.ppap-tritype__arrow-head {
+  fill: #333;
+  stroke: none;
+}
+
+/* —— 顶框：与下两角同尺寸，底边两角落在两腰上 —— */
+.ppap-tritype__pin-top {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ppap-tritype__top-wrap {
+  position: relative;
+}
+
+.ppap-tritype__pin-top .ppap-tritype__tag--above {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1mm;
+  white-space: nowrap;
+}
+
+.ppap-tritype__wing-ext {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  margin-left: -1.5px;
+  white-space: nowrap;
+}
+
+.ppap-tritype__top-connector {
+  width: 3mm;
+  border-top: 1.5px solid #c62828;
+  flex-shrink: 0;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.ppap-tritype__top-connector--feeling {
+  border-top-color: #2e7d32;
+}
+
+.ppap-tritype__top-connector--thinking {
+  border-top-color: #1565c0;
+}
+
+.ppap-tritype__wing-name {
+  font-weight: 800;
+  font-size: 9px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.ppap-tritype__wing-name--action {
+  color: #b71c1c;
+}
+
+.ppap-tritype__wing-name--feeling {
+  color: #2e7d32;
+}
+
+.ppap-tritype__wing-name--thinking {
+  color: #1565c0;
+}
+
+/* —— 左下：框中心 = 顶点 —— */
+.ppap-tritype__pin-bl {
+  position: absolute;
+  z-index: 2;
+}
+
+.ppap-tritype__tag--left-of {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 2mm;
+}
+
+/* —— 右下：框中心 = 顶点 —— */
+.ppap-tritype__pin-br {
+  position: absolute;
+  z-index: 2;
+}
+
+.ppap-tritype__tag--right-of {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 2mm;
+}
+
+.ppap-tritype__tag {
+  font-weight: 800;
+  font-size: 9px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.ppap-tritype__tag--action {
+  color: #b71c1c;
+}
+
+.ppap-tritype__tag--feeling {
+  color: #2e7d32;
+}
+
+.ppap-tritype__tag--thinking {
+  color: #1565c0;
+}
+
+.ppap-tritype__box {
+  border: 1.5px solid #333;
+  padding: 1.5mm 3mm;
+  background: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ppap-tritype__box--action {
+  border-color: #c62828;
+}
+
+.ppap-tritype__box--feeling {
+  border-color: #2e7d32;
+}
+
+.ppap-tritype__box--thinking {
+  border-color: #1565c0;
+}
+
+.ppap-tritype__box-self {
+  display: block;
+  font-weight: 800;
+  font-size: 11px;
+  color: #222;
+  line-height: 1.3;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* 翼型名称后的右上标备注 */
+.ppap-tritype__aux-sup {
+  font-size: 5.5px;
+  font-weight: 400;
+  line-height: 0;
+  color: #888;
+  vertical-align: super;
+  margin-left: 0.5px;
+}
+
+/* —— 边注：联结词 + 说明 —— */
+.ppap-tritype__edge-label {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  pointer-events: none;
+  line-height: 1.25;
+}
+
+.ppap-tritype__edge-label--left,
+.ppap-tritype__edge-label--right {
+  width: 36mm;
+  max-width: 36mm;
+}
+
+.ppap-tritype__edge-label--bottom {
+  width: 44mm;
+  max-width: 44mm;
+}
+
+.ppap-tritype__edge-kw {
+  display: inline-block;
+  padding: 0.7mm 2mm;
+  background: #e6e6e6;
+  font-weight: 800;
+  font-size: 10px;
+  color: #111;
+  white-space: nowrap;
+}
+
+.ppap-tritype__edge-desc {
+  margin: 0.6mm 0 0;
+  padding: 0.5mm 1.2mm;
+  font-size: 7.5px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.35;
+  background: #fff;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* —— 上顶点核心自我特征表 —— */
+.ppap-tritype-traits {
+  width: 100%;
+  margin: 2mm 0 0;
+  box-sizing: border-box;
+}
+
+.ppap-tritype-traits__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 8.5px;
+  line-height: 1.35;
+}
+
+.ppap-tritype-traits__caption {
+  caption-side: top;
+  padding: 1.4mm 2mm;
+  background: #ececec;
+  border: 1px solid #bbb;
+  border-bottom: none;
+  font-weight: 800;
+  font-size: 10px;
+  color: #222;
+  text-align: center;
+}
+
+.ppap-tritype-traits__th {
+  padding: 1.2mm 0.8mm;
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #1565c0;
+  font-weight: 800;
+  font-size: 8.5px;
+  text-align: center;
+  vertical-align: middle;
+  word-break: break-word;
+}
+
+.ppap-tritype-traits__td {
+  padding: 1.4mm 0.8mm;
+  border: 1px solid #bbb;
+  color: #222;
+  text-align: center;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+/* —— 自我应用（固定留空作答） —— */
+.ppap-self-app {
+  width: 100%;
+  margin: 2.5mm 0 0;
+  box-sizing: border-box;
+}
+
+.ppap-self-app__title {
+  padding: 1.4mm 2mm;
+  background: #ececec;
+  border: 1px solid #bbb;
+  font-weight: 800;
+  font-size: 10px;
+  color: #222;
+  text-align: center;
+}
+
+.ppap-self-app__body {
+  border: 1px solid #bbb;
+  border-top: none;
+  padding: 2mm 2.5mm 2.5mm;
+  background: #fff;
+}
+
+.ppap-self-app__group + .ppap-self-app__group {
+  margin-top: 3mm;
+}
+
+.ppap-self-app__q {
+  margin: 0 0 1.2mm;
+  line-height: 1.4;
+}
+
+.ppap-self-app__q--main {
+  font-weight: 800;
+  font-size: 9px;
+  color: #1565c0;
+}
+
+.ppap-self-app__q--sub {
+  margin-top: 2mm;
+  font-weight: 700;
+  font-size: 8.5px;
+  color: #222;
+}
+
+.ppap-self-app__answer {
+  display: flex;
+  align-items: flex-end;
+  gap: 1mm;
+  min-height: 7mm;
+  margin-bottom: 0.5mm;
+}
+
+.ppap-self-app__a-label {
+  flex-shrink: 0;
+  font-size: 8.5px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1;
+  padding-bottom: 0.8mm;
+}
+
+.ppap-self-app__a-line {
+  flex: 1;
+  border-bottom: 1px solid #bbb;
+  min-height: 6mm;
+}
+
+/* —— 详细说明 —— */
+.ppap-tritype-detail {
+  width: 100%;
+  margin: 2.5mm 0 0;
+  box-sizing: border-box;
+}
+
+.ppap-tritype-detail__title {
+  padding: 1.4mm 2mm;
+  background: #ececec;
+  border: 1px solid #bbb;
+  font-weight: 800;
+  font-size: 11px;
+  color: #222;
+  text-align: center;
+}
+
+.ppap-tritype-detail__body {
+  border: 1px solid #bbb;
+  border-top: none;
+  padding: 2mm 2.5mm 2.5mm;
+  background: #fff;
+}
+
+.ppap-tritype-detail__p {
+  margin: 0 0 2mm;
+  font-size: 10.5px;
+  line-height: 1.45;
+  color: #222;
+  text-align: left;
+}
+
+.ppap-tritype-detail__p:last-child {
+  margin-bottom: 0;
+}
+
+.ppap-tritype-detail__p--lead {
+  font-weight: 800;
+  color: #1565c0;
+}
+
+.ppap-tritype-detail__em {
+  font-weight: 800;
+}
+
+@media print {
+  .report-page.report-ppap {
+    height: 297mm;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .report-page.report-tritype {
+    height: 297mm;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .report-page.report-core-self {
+    page-break-after: always;
+    page-break-inside: auto;
+  }
+
+  .report-page.report-stress {
+    page-break-after: always;
+  }
+
+  .report-stress__footer {
+    page-break-inside: avoid;
+  }
+
+  .report-core-self__footer {
+    page-break-inside: avoid;
+  }
+}
+
+@media (max-width: 720px) {
+  .report-page.report-overview {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .report-type-card__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-type-card__side--low,
+  .report-type-card__side--high {
+    border: none;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+
+  .report-type-card__side--high .report-type-card__side-title,
+  .report-type-card__side--high .report-type-card__keywords {
+    text-align: left;
+    direction: ltr;
+  }
+
+  .report-type-card__chart {
+    order: -1;
+  }
+}
+
+/* —— 第 5 页：核心自我 —— */
+
+.report-page.report-core-self {
+  width: 210mm;
+  max-width: 210mm;
+  min-height: 297mm;
+  height: auto;
+  padding: 5mm 7mm 4mm;
+  font-size: 10.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-core-self__main {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 2mm;
+}
+
+.report-core-self__missing {
+  margin: 4mm 0;
+  color: #666;
+  font-size: 10px;
+}
+
+.report-core-self__surface {
+  margin-top: 5mm;
+}
+
+.report-core-self__inner {
+  margin-top: 5mm;
+}
+
+.report-core-self__footer {
+  margin-top: 6mm;
+  padding-top: 3mm;
+  border-top: 1px solid #ddd;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.report-core-self__footer .report-page-footer {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* —— 第 6 页：表面 / 内在自我 冰山比例 —— */
+
+.report-page.report-awareness {
+  width: 210mm;
+  max-width: 210mm;
+  height: 297mm;
+  max-height: 297mm;
+  min-height: 297mm;
+  padding: 4mm 6mm 3mm;
+  font-size: 10.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.report-awareness__main {
+  flex: 1;
+  min-height: 0;
+  padding-top: 2mm;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+  overflow: visible;
+}
+
+.report-awareness__tail {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.report-awareness__footer {
+  margin-top: 2mm;
+  padding-top: 2mm;
+  border-top: 1px solid #ddd;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.report-awareness__footer .report-page-footer {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.iceberg-ratio {
+  width: 100%;
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  --iceberg-waterline: 21%;
+  --iceberg-waterline-offset: 65px;
+}
+
+.iceberg-ratio__frame {
+  position: relative;
+  border: 1px solid #bbb;
+  padding: 0;
+  background: #fff;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.iceberg-ratio__legend {
+  position: absolute;
+  top: 0;
+  left: 5mm;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 1mm 2.5mm;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.35;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.iceberg-ratio__body {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  flex: 1;
+  min-height: 0;
+  margin-top: 4mm;
+  background: #fff;
+  align-items: stretch;
+}
+
+.iceberg-ratio__left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  background: #fff;
+  padding: 1mm 0 1mm 2mm;
+  box-sizing: border-box;
+}
+
+.iceberg-ratio__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.iceberg-ratio__right {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #fff;
+}
+
+.iceberg-ratio__zone--surface {
+  flex: 0 0 calc(var(--iceberg-waterline) + var(--iceberg-waterline-offset));
+  background: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 3mm 2mm 2mm;
+  box-sizing: border-box;
+}
+
+.iceberg-ratio__waterline {
+  flex: 0 0 1px;
+  height: 1px;
+  background: #b0b0b0;
+}
+
+.iceberg-ratio__zone--inner {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2mm 3mm 3mm 2mm;
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+.iceberg-ratio__stat {
+  text-align: right;
+}
+
+.iceberg-ratio__stat-label {
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1mm;
+}
+
+.iceberg-ratio__stat-value {
+  margin: 0;
+  line-height: 1;
+}
+
+.iceberg-ratio__stat-num {
+  font-size: 48px;
+  font-weight: 800;
+  color: #e53935;
+  letter-spacing: -0.02em;
+}
+
+.iceberg-ratio__stat-pct {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-left: 2px;
+}
+
+.iceberg-ratio__eval {
+  margin-top: auto;
+  padding-top: 2mm;
+  text-align: left;
+}
+
+.iceberg-ratio__eval-title {
+  margin: 0 0 1mm;
+  font-size: 15px;
+  font-weight: 800;
+  color: #222;
+}
+
+.iceberg-ratio__eval-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #333;
+  text-align: justify;
+}
+
+.iceberg-ratio__eval-highlight {
+  color: #e53935;
+  font-weight: 700;
+}
+
+/* —— 第 6 页下半：意识地图 | 幸福率 —— */
+
+.consciousness-map {
+  width: 100%;
+  flex: 0 0 auto;
+  overflow: visible;
+}
+
+.consciousness-map__frame {
+  position: relative;
+  border: 1px solid #bbb;
+  background: #fff;
+  padding: 0 0 1mm;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.consciousness-map__legend {
+  position: absolute;
+  top: 0;
+  left: 5mm;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 1mm 2.5mm;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.35;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.consciousness-map__body {
+  display: grid;
+  grid-template-columns: 1fr 6mm 28%;
+  gap: 0 1mm;
+  margin-top: 4mm;
+  padding: 0 2mm 0 3mm;
+  align-items: stretch;
+}
+
+.consciousness-map__main {
+  min-width: 0;
+}
+
+.consciousness-map__table--unified thead th {
+  background: #5a5a5a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 2px 1px;
+}
+
+.consciousness-map__col-rail {
+  width: 6%;
+  background: #5a5a5a;
+}
+
+.consciousness-map__col-note {
+  width: 22%;
+  background: #5a5a5a;
+}
+
+.consciousness-map__table--unified th:nth-child(2) { width: 11%; }
+.consciousness-map__table--unified th:nth-child(3) { width: 17%; }
+.consciousness-map__table--unified th:nth-child(4) { width: 22%; }
+.consciousness-map__table--unified th:nth-child(5) { width: 21%; }
+
+.consciousness-map__rail-cell {
+  border: 1px solid #c8c8c8;
+  padding: 1px 2px;
+  text-align: center;
+  vertical-align: middle;
+  background: #fafafa;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+.consciousness-map__rail-cell--power {
+  color: #1565c0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.consciousness-map__rail-cell--force {
+  color: #c62828;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.consciousness-map__rail-cell--threshold {
+  background: #eceff1;
+  padding: 0;
+}
+
+.consciousness-map__note-cell {
+  border: 1px solid #c8c8c8;
+  padding: 2px 3px;
+  text-align: justify;
+  vertical-align: middle;
+  font-size: 8.5px;
+  line-height: 1.4;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  max-width: 0;
+  overflow: hidden;
+}
+
+.consciousness-map__note-cell p {
+  margin: 0;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.consciousness-map__note-cell--power {
+  background: #e3f2fd;
+  color: #0d47a1;
+  border-bottom-color: #90caf9;
+}
+
+.consciousness-map__note-cell--force {
+  background: #ffebee;
+  color: #b71c1c;
+}
+
+.consciousness-map__note-cell--threshold {
+  background: #eceff1;
+  padding: 0;
+}
+
+.consciousness-map__zone-arrow {
+  font-size: 14px;
+  line-height: 1;
+  writing-mode: horizontal-tb;
+  display: inline-block;
+}
+
+.consciousness-map__zone-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+.consciousness-map__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 9.5px;
+  line-height: 1.2;
+}
+
+.consciousness-map__table th,
+.consciousness-map__table td {
+  border: 1px solid #c8c8c8;
+  padding: 1px 2px;
+  text-align: center;
+  vertical-align: middle;
+  word-break: keep-all;
+}
+
+.consciousness-map__table--unified .consciousness-map__note-cell,
+.consciousness-map__table--unified .consciousness-map__note-cell p {
+  text-align: justify;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.consciousness-map__table--map thead th {
+  background: #5a5a5a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 2px 1px;
+}
+
+.consciousness-map__table--happy thead th {
+  background: #1565c0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 10.5px;
+  padding: 2px 1px;
+}
+
+.consciousness-map__table--happy th:nth-child(1) { width: 42%; }
+.consciousness-map__table--happy th:nth-child(2) { width: 24%; }
+.consciousness-map__table--happy th:nth-child(3) { width: 34%; }
+
+.consciousness-map__row--power .consciousness-map__level-name {
+  color: #1565c0;
+  font-weight: 700;
+}
+
+.consciousness-map__row--force .consciousness-map__level-name {
+  color: #c62828;
+  font-weight: 700;
+}
+
+.consciousness-map__row--threshold td {
+  background: #eceff1;
+}
+
+.consciousness-map__row--threshold .consciousness-map__level-name {
+  color: #37474f;
+  font-weight: 800;
+}
+
+.consciousness-map__row--highlight td {
+  box-shadow: inset 0 0 0 2px #e53935;
+}
+
+.consciousness-map__cell--lux,
+.consciousness-map__cell--lux-sm {
+  font-weight: 600;
+  color: #333;
+}
+
+.consciousness-map__level-name {
+  display: block;
+  font-size: 10.5px;
+  line-height: 1.2;
+}
+
+.consciousness-map__cell--happy {
+  font-weight: 800;
+  color: #333;
+}
+
+.consciousness-map__bridge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e53935;
+}
+
+.consciousness-map__bridge-svg {
+  width: 5mm;
+  height: 12mm;
+}
+
+.consciousness-map__happiness {
+  min-width: 0;
+}
+
+.consciousness-map__caption {
+  margin: 1.5mm 0 0;
+  text-align: center;
+  font-size: 10px;
+  color: #555;
+}
+
+.consciousness-map__footnotes {
+  margin: 1mm 3mm 0;
+  font-size: 7.5px;
+  line-height: 1.3;
+  color: #444;
+  flex-shrink: 0;
+}
+
+.consciousness-map__footnotes p {
+  margin: 0 0 1mm;
+}
+
+.consciousness-map__caption--map {
+  margin-bottom: 0;
+}
+
+/* —— 第 7 页：压力应对 —— */
+
+.report-page.report-stress {
+  width: 210mm;
+  max-width: 210mm;
+  min-height: 297mm;
+  height: auto;
+  padding: 5mm 7mm 4mm;
+  font-size: 10.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  page-break-inside: auto;
+}
+
+.report-stress__main {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8mm;
+  padding-top: 2mm;
+}
+
+.report-stress__footer {
+  margin-top: 6mm;
+  padding-top: 3mm;
+  border-top: 1px solid #ddd;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.report-stress__footer .report-page-footer {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.stress-intro {
+  width: 100%;
+}
+
+.stress-intro__frame {
+  position: relative;
+  border: 1px solid #bbb;
+  padding: 5mm 5mm 4mm;
+  background: #fff;
+}
+
+.stress-intro__legend {
+  position: absolute;
+  top: 0;
+  left: 5mm;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0 2.5mm;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.stress-intro__legend-sep {
+  font-weight: 400;
+  color: #666;
+}
+
+.stress-intro__text {
+  margin: 2mm 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #333;
+  text-align: justify;
+  font-weight: 400;
+}
+
+/* —— 压力应对示意流程图 —— */
+
+.stress-flow {
+  width: 100%;
+  padding: 2mm 0 0;
+  overflow: visible;
+}
+
+.stress-flow__svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.stress-flow__label {
+  font-size: 15px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.stress-flow__label--core {
+  font-size: 26px;
+  font-weight: 800;
+  fill: #fff;
+}
+
+.stress-flow__chevron {
+  font-size: 28px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.stress-flow__branch-label {
+  font-size: 14px;
+  font-weight: 700;
+  text-anchor: start;
+  dominant-baseline: middle;
+}
+
+/* —— 五维度压力测试作答 —— */
+
+.stress-dims {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+  margin-top: 2mm;
+}
+
+.stress-dim__head {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #c5d4dc;
+}
+
+.stress-dim__title {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 1.5mm 3.5mm;
+  background: #1e4d6b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.stress-dim__desc {
+  flex: 1;
+  margin: 0;
+  padding: 1.5mm 3.5mm;
+  background: #fff;
+  color: #2a6674;
+  font-size: 13px;
+  line-height: 1.28;
+  display: flex;
+  align-items: center;
+}
+
+.stress-dim__list {
+  list-style: none;
+  margin: 0 0 0.5mm;
+  padding: 0 0 0 1mm;
+}
+
+.stress-dim__item {
+  margin-bottom: 1.25mm;
+  line-height: 1.28;
+  font-size: 12px;
+  color: #222;
+}
+
+.stress-dim__item:last-child {
+  margin-bottom: 0;
+}
+
+.stress-dim__bullet {
+  display: inline-block;
+  width: 8px;
+  margin-right: 2mm;
+  font-size: 9px;
+  color: #333;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.stress-dim__statement {
+  display: inline;
+}
+
+.stress-dim__answer {
+  display: inline-block;
+  margin-left: 5ch;
+  background: #e8e8e8;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 1.2;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* —— 内在自我卡片 —— */
+
+.ppap-inner-self {
+  width: 100%;
+}
+
+.ppap-inner-self__frame {
+  position: relative;
+  border: 1px solid #bbb;
+  padding: 5mm 3.5mm 3.5mm;
+  background: #fff;
+}
+
+.ppap-inner-self__legend {
+  position: absolute;
+  top: 0;
+  left: 5mm;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0 2.5mm;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.ppap-inner-self__top {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin-top: 2mm;
+  padding-bottom: 3mm;
+}
+
+.ppap-inner-self__top-col {
+  flex: 1;
+  min-width: 0;
+  padding: 0 2.5mm;
+}
+
+.ppap-inner-self__top-col + .ppap-inner-self__top-col {
+  border-left: 1px solid #ccc;
+}
+
+.ppap-inner-self__divider-h {
+  height: 1px;
+  background: #ccc;
+  margin: 0 1mm 3mm;
+}
+
+.ppap-inner-self__bottom {
+  display: flex;
+  align-items: stretch;
+}
+
+.ppap-inner-self__bottom-col {
+  flex: 1;
+  min-width: 0;
+  padding: 0 2.5mm 1mm;
+}
+
+.ppap-inner-self__bottom-col + .ppap-inner-self__bottom-col {
+  border-left: 1px solid #ccc;
+}
+
+.ppap-inner-self__col-title {
+  margin: 0 0 1.5mm;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.ppap-inner-self__col-title--accent {
+  color: #a0522d;
+}
+
+.ppap-inner-self__col-title--dark {
+  color: #8b1a1a;
+}
+
+.ppap-inner-self__col-title--black {
+  color: #222;
+}
+
+.ppap-inner-self__subtitle {
+  margin: 0 0 1.5mm;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.4;
+}
+
+.ppap-inner-self__text {
+  margin: 0;
+  font-size: 10.5px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+}
+
+.ppap-core-self {
+  width: 100%;
+}
+
+.ppap-core-self__frame {
+  position: relative;
+  border: 1px solid #bbb;
+  padding: 5mm 4mm 4mm;
+  background: #fff;
+}
+
+.ppap-core-self__legend {
+  position: absolute;
+  top: 0;
+  left: 5mm;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0 2.5mm;
+  background: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.ppap-core-self__body {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin-top: 2mm;
+}
+
+.ppap-core-self__ident {
+  flex: 0 0 28%;
+  max-width: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2mm 2mm 2mm 1mm;
+  text-align: left;
+}
+
+.ppap-core-self__intro {
+  margin: 0;
+  font-size: 9px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.35;
+}
+
+.ppap-core-self__name {
+  margin: 1.5mm 0 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #1565c0;
+  line-height: 1.2;
+}
+
+.ppap-core-self__divider {
+  width: 1px;
+  background: #ccc;
+  flex-shrink: 0;
+  margin: 1mm 0;
+}
+
+.ppap-core-self__content {
+  flex: 1;
+  min-width: 0;
+  padding: 1mm 2mm 1mm 4mm;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+}
+
+.ppap-core-self__quote {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.45;
+  color: #444;
+  font-weight: 400;
+}
+
+.ppap-core-self__quote-author {
+  font-weight: 400;
+  color: #555;
+}
+
+.ppap-core-self__desc {
+  margin: 0;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #222;
+}
+
+.ppap-core-self__tags {
+  margin: 0;
+  font-size: 9.5px;
+  line-height: 1.4;
+  color: #444;
+  font-weight: 400;
+}
+
+.ppap-surface-ego {
+  width: 100%;
+}
+
+.ppap-surface-ego__frame {
+  position: relative;
+  border: 1px solid #bbb;
+  padding: 5mm 3.5mm 3.5mm;
+  background: #fff;
+}
+
+.ppap-surface-ego__legend {
+  position: absolute;
+  top: 0;
+  left: 5mm;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0 2.5mm;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.ppap-surface-ego__grid {
+  display: flex;
+  align-items: stretch;
+  margin-top: 2mm;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3mm;
+  margin-bottom: 3mm;
+}
+
+.ppap-surface-ego__col {
+  min-width: 0;
+  padding: 1mm 2.5mm;
+}
+
+.ppap-surface-ego__col--images {
+  flex: 0 0 36%;
+  max-width: 36%;
+  padding-left: 1mm;
+}
+
+.ppap-surface-ego__col--mid {
+  flex: 0 0 32%;
+  max-width: 32%;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 3mm;
+}
+
+.ppap-surface-ego__col--health {
+  flex: 1;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 3mm;
+}
+
+.ppap-surface-ego__heading {
+  margin: 0 0 1.5mm;
+  font-size: 11px;
+  font-weight: 800;
+  color: #1565c0;
+  line-height: 1.3;
+}
+
+.ppap-surface-ego__list {
+  margin: 0;
+  padding: 0 0 0 3.5mm;
+  list-style: disc;
+}
+
+.ppap-surface-ego__list li {
+  margin: 0 0 1.8mm;
+  font-size: 10.5px;
+  line-height: 1.42;
+  color: #222;
+  font-weight: 400;
+}
+
+.ppap-surface-ego__list li:last-child {
+  margin-bottom: 0;
+}
+
+.ppap-surface-ego__block + .ppap-surface-ego__block {
+  margin-top: 0;
+}
+
+.ppap-surface-ego__text {
+  margin: 0;
+  font-size: 10.5px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+}
+
+.ppap-surface-ego__defense {
+  display: flex;
+  align-items: flex-start;
+  gap: 3mm;
+}
+
+.ppap-surface-ego__defense-label {
+  flex: 0 0 auto;
+  font-size: 11px;
+  font-weight: 800;
+  color: #1565c0;
+  line-height: 1.45;
+  white-space: nowrap;
+}
+
+.ppap-surface-ego__defense-text {
+  flex: 1;
+  margin: 0;
+  font-size: 10.5px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  min-width: 0;
+}
+
+.ppap-surface-ego__defense-name {
+  font-weight: 700;
+  color: #222;
+}
+
+/* —— 各页底部版权说明 —— */
+.report-page-footer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: auto;
+  padding-top: 12px;
+  flex-shrink: 0;
+  color: #111;
+}
+
+.report-page-footer--compact {
+  padding-top: 2mm;
+  gap: 10px;
+}
+
+.report-page-footer__brand {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.report-page-footer__brand-line {
+  font-size: 1.15rem;
+}
+
+.report-page-footer--compact .report-page-footer__brand-line {
+  font-size: 11px;
+}
+
+.report-page-footer__divider {
+  align-self: stretch;
+  width: 1px;
+  min-height: 36px;
+  background: #d1d1d1;
+  flex-shrink: 0;
+}
+
+.report-page-footer--compact .report-page-footer__divider {
+  min-height: 28px;
+}
+
+.report-page-footer__legal {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  color: #333;
+}
+
+.report-page-footer--compact .report-page-footer__legal {
+  font-size: 7.5px;
+}
+
+.report-page-footer__legal p {
+  margin: 0 0 3px;
+}
+
+.report-page-footer__legal p:last-child {
+  margin-bottom: 0;
+}
+
+.report-page__footer-mini {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #ddd;
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: 600;
+}
+
+/* 打印 / PDF 导出 */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .report-shell__toolbar,
+  .report-shell__status {
+    display: none !important;
+  }
+
+  .report-shell {
+    background: #fff;
+    padding: 0;
+  }
+
+  .report-document,
+  .report-document * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .report-document {
+    gap: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  .report-document > .report-page {
+    box-shadow: none;
+  }
+
+  .report-page {
+    min-height: auto;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  /* 第 1 页：封面说明区背景 */
+  .report-page.report-cover {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 12mm 14mm 10mm;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .report-cover__intro-box {
+    background: #e8f4fc !important;
+  }
+
+  .report-cover__brand-word {
+    color: #4a7ab5 !important;
+  }
+
+  /* 第 2 页：九型分数条与数据 */
+  .report-page.report-overview {
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    max-height: none;
+    padding: 5mm 7mm 4mm;
+    page-break-after: always;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .report-type-card__head {
+    background: #f0f0f0 !important;
+  }
+
+  .report-type-card__chart {
+    background: #f7f7f7 !important;
+  }
+
+  .report-type-card__bar {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .report-type-card__bar-score {
+    color: #fff !important;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.85), 0 1px 2px rgba(0, 0, 0, 0.6) !important;
+  }
+
+  .report-type-card__bar-name {
+    color: #fff !important;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.85), 0 1px 2px rgba(0, 0, 0, 0.6) !important;
+  }
+
+  .report-document:has(.report-overview) {
+    max-width: none;
+    width: 210mm;
+  }
+
+  /* 第 6 页：固定 A4 高度，打印与屏幕一致（WYSIWYG） */
+  .report-page.report-awareness {
+    width: 210mm;
+    height: 297mm;
+    max-height: 297mm;
+    min-height: 297mm;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: always;
+    overflow: hidden;
+  }
+
+  /* 第 7 页：压力应对 */
+  .report-page.report-stress {
+    width: 210mm;
+    min-height: 297mm;
+    height: auto;
+    padding: 5mm 7mm 4mm;
+    display: block !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .report-stress__main {
+    display: block !important;
+    flex: none !important;
+    min-height: auto !important;
+    overflow: visible !important;
+  }
+
+  .report-stress__main > * + * {
+    margin-top: 5mm;
+  }
+
+  .stress-flow__svg {
+    overflow: visible !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .report-page {
+    padding: 32px 20px 28px;
+    min-height: auto;
+  }
+
+  .report-cover__meta-row {
+    grid-template-columns: 1fr;
+  }
+
+  .report-cover__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .report-cover__footer-legal {
+    text-align: left;
+    max-width: none;
+  }
+}

@@ -1,0 +1,626 @@
+
+
+
+[
+  {
+    "tritype": "125",
+    "alias": "导师",
+    "nodes": {
+      "action_center": "改善的自我",
+      "feeling_center": "助人的自我",
+      "thinking_center": "探究的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "奉献",
+        "description": "我遵循道德原则去帮助他人，因为做正确的事和照顾他人是我的责任。"
+      },
+      "action_to_thinking": {
+        "keyword": "客观",
+        "description": "我通过严谨的逻辑分析和事实调查来确保我的判断无懈可击。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "洞察",
+        "description": "我通过理解他人的心理和需求来提供隐密而精准的帮助。"
+      }
+    }
+  },
+  {
+    "tritype": "126",
+    "alias": "支持者",
+    "nodes": {
+      "action_center": "改善的自我",
+      "feeling_center": "助人的自我",
+      "thinking_center": "忠诚的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "奉献",
+        "description": "我遵循道德原则去帮助他人，因为做正确的事和照顾他人是我的责任。"
+      },
+      "action_to_thinking": {
+        "keyword": "尽责",
+        "description": "我严格遵守规则并保持忠诚，以消除对于犯错和未知的焦虑。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "依赖",
+        "description": "只要我尽到了对别人的义务，我就一定会得到爱。"
+      }
+    }
+  },
+  {
+    "tritype": "127",
+    "alias": "教师",
+    "nodes": {
+      "action_center": "改善的自我",
+      "feeling_center": "助人的自我",
+      "thinking_center": "享受的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "奉献",
+        "description": "我遵循道德原则去帮助他人，因为做正确的事和照顾他人是我的责任。"
+      },
+      "action_to_thinking": {
+        "keyword": "愿景",
+        "description": "我努力将创新的想法与高标准的原则结合，试图构建理想的乌托邦。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "热情",
+        "description": "我用积极乐观和充满乐趣的方式与他人建立联系，让大家都感到快乐。"
+      }
+    }
+  },
+  {
+    "tritype": "135",
+    "alias": "技术专家",
+    "nodes": {
+      "action_center": "改善的自我",
+      "feeling_center": "成就的自我",
+      "thinking_center": "探究的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "卓越",
+        "description": "我以极高的标准要求自己，通过高效和完美的表现来获得认可。"
+      },
+      "action_to_thinking": {
+        "keyword": "客观",
+        "description": "我通过严谨的逻辑分析和事实调查来确保我的判断无懈可击。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "效能",
+        "description": "我将专业知识与执行力结合，确保我的工作成果聪明且引人注目。"
+      }
+    }
+  },
+  {
+    "tritype": "136",
+    "alias": "任务执行者",
+    "nodes": {
+      "action_center": "改善的自我",
+      "feeling_center": "成就的自我",
+      "thinking_center": "忠诚的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "卓越",
+        "description": "我以极高的标准要求自己，通过高效和完美的表现来获得认可。"
+      },
+      "action_to_thinking": {
+        "keyword": "尽责",
+        "description": "我严格遵守规则并保持忠诚，以消除对于犯错和未知的焦虑。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "顺从",
+        "description": "我努力符合社会的期望和规则，通过成为可靠的榜样来获得安全感。"
+      }
+    }
+  },
+  {
+    "tritype": "137",
+    "alias": "系统构建者",
+    "nodes": {
+      "action_center": "改善的自我",
+      "feeling_center": "成就的自我",
+      "thinking_center": "享受的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "卓越",
+        "description": "我以极高的标准要求自己，通过高效和完美的表现来获得认可。"
+      },
+      "action_to_thinking": {
+        "keyword": "愿景",
+        "description": "我努力将创新的想法与高标准的原则结合，试图构建理想的乌托邦。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "活力",
+        "description": "我以迷人的魅力和快速的适应力去抓住每一个成功的机会。"
+      }
+    }
+  },
+  {
+    "tritype": "145",
+    "alias": "研究员",
+    "nodes": {
+      "action_center": "改善的自我",
+      "feeling_center": "表现的自我",
+      "thinking_center": "探究的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "理想",
+        "description": "我追求事物的完美与独特，对于现实的缺憾抱有深刻的改进渴望。"
+      },
+      "action_to_thinking": {
+        "keyword": "客观",
+        "description": "我通过严谨的逻辑分析和事实调查来确保我的判断无懈可击。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "深思",
+        "description": "我深入探索内心最隐秘的情感和宇宙的真相，保持理性与独特的距离。"
+      }
+    }
+  },
+  {
+    "tritype": "146",
+    "alias": "哲学家",
+    "nodes": {
+      "action_center": "改善的自我",
+      "feeling_center": "表现的自我",
+      "thinking_center": "忠诚的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "理想",
+        "description": "我追求事物的完美与独特，对于现实的缺憾抱有深刻的改进渴望。"
+      },
+      "action_to_thinking": {
+        "keyword": "尽责",
+        "description": "我严格遵守规则并保持忠诚，以消除对于犯错和未知的焦虑。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "怀疑",
+        "description": "我在坚持自我独特性与寻求外界支持之间摇摆，情感充满矛盾与反思。"
+      }
+    }
+  },
+  {
+    "tritype": "147",
+    "alias": "远见者",
+    "nodes": {
+      "action_center": "改善的自我",
+      "feeling_center": "表现的自我",
+      "thinking_center": "享受的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "理想",
+        "description": "我追求事物的完美与独特，对于现实的缺憾抱有深刻的改进渴望。"
+      },
+      "action_to_thinking": {
+        "keyword": "愿景",
+        "description": "我努力将创新的想法与高标准的原则结合，试图构建理想的乌托邦。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "灵感",
+        "description": "我用天马行空的想象力和独特的美感来点缀生活，逃避平凡与单调。"
+      }
+    }
+  },
+  {
+    "tritype": "258",
+    "alias": "战略家",
+    "nodes": {
+      "action_center": "挑战的自我",
+      "feeling_center": "助人的自我",
+      "thinking_center": "探究的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "保护",
+        "description": "我通过保护和照顾我所爱的人来展现我的力量与关怀。"
+      },
+      "action_to_thinking": {
+        "keyword": "战略",
+        "description": "我通过冷静的观察和掌握核心知识来巩固我的权力和独立性。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "洞察",
+        "description": "我通过理解他人的心理和需求来提供隐密而精准的帮助。"
+      }
+    }
+  },
+  {
+    "tritype": "259",
+    "alias": "问题解决者",
+    "nodes": {
+      "action_center": "和解的自我",
+      "feeling_center": "助人的自我",
+      "thinking_center": "探究的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "乐观",
+        "description": "如果我为他人着想并始终展现出积极的一面，我的世界就会是一片祥和。"
+      },
+      "action_to_thinking": {
+        "keyword": "抽离",
+        "description": "我退回到自己的精神世界中，通过减少需求和避免冲突来获取安宁。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "洞察",
+        "description": "我通过理解他人的心理和需求来提供隐密而精准的帮助。"
+      }
+    }
+  },
+  {
+    "tritype": "268",
+    "alias": "拯救者",
+    "nodes": {
+      "action_center": "挑战的自我",
+      "feeling_center": "助人的自我",
+      "thinking_center": "忠诚的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "保护",
+        "description": "我通过保护和照顾我所爱的人来展现我的力量与关怀。"
+      },
+      "action_to_thinking": {
+        "keyword": "防御",
+        "description": "我随时保持警惕并主动出击，以防止任何人控制我或让我陷入危险。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "依赖",
+        "description": "只要我尽到了对别人的义务，我就一定会得到爱。"
+      }
+    }
+  },
+  {
+    "tritype": "926",
+    "alias": "圣人",
+    "nodes": {
+      "action_center": "和解的自我",
+      "feeling_center": "助人的自我",
+      "thinking_center": "忠诚的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "乐观",
+        "description": "如果我为他人着想并始终展现出积极的一面，我的世界就会是一片祥和。"
+      },
+      "action_to_thinking": {
+        "keyword": "依恋",
+        "description": "只要能不断消除内心的不安，我就可以守住属于自己的容身之处。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "依赖",
+        "description": "只要我尽到了对别人的义务，我就一定会得到爱。"
+      }
+    }
+  },
+  {
+    "tritype": "278",
+    "alias": "自由灵魂",
+    "nodes": {
+      "action_center": "挑战的自我",
+      "feeling_center": "助人的自我",
+      "thinking_center": "享受的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "保护",
+        "description": "我通过保护和照顾我所爱的人来展现我的力量与关怀。"
+      },
+      "action_to_thinking": {
+        "keyword": "开拓",
+        "description": "我以无畏的行动力和积极的愿景去探索新事物，拒绝受到任何限制。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "热情",
+        "description": "我用积极乐观和充满乐趣的方式与他人建立联系，让大家都感到快乐。"
+      }
+    }
+  },
+  {
+    "tritype": "279",
+    "alias": "和平缔造者",
+    "nodes": {
+      "action_center": "和解的自我",
+      "feeling_center": "助人的自我",
+      "thinking_center": "享受的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "乐观",
+        "description": "如果我为他人着想并始终展现出积极的一面，我的世界就会是一片祥和。"
+      },
+      "action_to_thinking": {
+        "keyword": "逃避",
+        "description": "我通过寻找快乐和多种可能性来转移注意力，避免面对冲突与不适。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "热情",
+        "description": "我用积极乐观和充满乐趣的方式与他人建立联系，让大家都感到快乐。"
+      }
+    }
+  },
+  {
+    "tritype": "358",
+    "alias": "方案大师",
+    "nodes": {
+      "action_center": "挑战的自我",
+      "feeling_center": "成就的自我",
+      "thinking_center": "探究的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "成功",
+        "description": "我运用我的力量和行动力来达成目标，确保我是赢家并掌控局面。"
+      },
+      "action_to_thinking": {
+        "keyword": "战略",
+        "description": "我通过冷静的观察和掌握核心知识来巩固我的权力和独立性。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "效能",
+        "description": "我将专业知识与执行力结合，确保我的工作成果聪明且引人注目。"
+      }
+    }
+  },
+  {
+    "tritype": "359",
+    "alias": "思考者",
+    "nodes": {
+      "action_center": "和解的自我",
+      "feeling_center": "成就的自我",
+      "thinking_center": "探究的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "适应",
+        "description": "我通过顺应环境并努力取得成就来维持生活的平稳与和谐。"
+      },
+      "action_to_thinking": {
+        "keyword": "抽离",
+        "description": "我退回到自己的精神世界中，通过减少需求和避免冲突来获取安宁。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "效能",
+        "description": "我将专业知识与执行力结合，确保我的工作成果聪明且引人注目。"
+      }
+    }
+  },
+  {
+    "tritype": "368",
+    "alias": "正义斗士",
+    "nodes": {
+      "action_center": "挑战的自我",
+      "feeling_center": "成就的自我",
+      "thinking_center": "忠诚的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "成功",
+        "description": "我运用我的力量和行动力来达成目标，确保我是赢家并掌控局面。"
+      },
+      "action_to_thinking": {
+        "keyword": "防御",
+        "description": "我随时保持警惕并主动出击，以防止任何人控制我或让我陷入危险。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "顺从",
+        "description": "我努力符合社会的期望和规则，通过成为可靠的榜样来获得安全感。"
+      }
+    }
+  },
+  {
+    "tritype": "369",
+    "alias": "调解者",
+    "nodes": {
+      "action_center": "和解的自我",
+      "feeling_center": "成就的自我",
+      "thinking_center": "忠诚的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "适应",
+        "description": "我通过顺应环境并努力取得成就来维持生活的平稳与和谐。"
+      },
+      "action_to_thinking": {
+        "keyword": "依恋",
+        "description": "只要能不断消除内心的不安，我就可以守住属于自己的容身之处。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "顺从",
+        "description": "我努力符合社会的期望和规则，通过成为可靠的榜样来获得安全感。"
+      }
+    }
+  },
+  {
+    "tritype": "378",
+    "alias": "推动者",
+    "nodes": {
+      "action_center": "挑战的自我",
+      "feeling_center": "成就的自我",
+      "thinking_center": "享受的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "成功",
+        "description": "我运用我的力量和行动力来达成目标，确保我是赢家并掌控局面。"
+      },
+      "action_to_thinking": {
+        "keyword": "开拓",
+        "description": "我以无畏的行动力和积极的愿景去探索新事物，拒绝受到任何限制。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "活力",
+        "description": "我以迷人的魅力和快速的适应力去抓住每一个成功的机会。"
+      }
+    }
+  },
+  {
+    "tritype": "379",
+    "alias": "大使",
+    "nodes": {
+      "action_center": "和解的自我",
+      "feeling_center": "成就的自我",
+      "thinking_center": "享受的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "适应",
+        "description": "我通过顺应环境并努力取得成就来维持生活的平稳与和谐。"
+      },
+      "action_to_thinking": {
+        "keyword": "逃避",
+        "description": "我通过寻找快乐和多种可能性来转移注意力，避免面对冲突与不适。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "活力",
+        "description": "我以迷人的魅力和快速的适应力去抓住每一个成功的机会。"
+      }
+    }
+  },
+  {
+    "tritype": "458",
+    "alias": "学者",
+    "nodes": {
+      "action_center": "挑战的自我",
+      "feeling_center": "表现的自我",
+      "thinking_center": "探究的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "真实",
+        "description": "我坚持我的独立性与深刻的情感，绝不屈服于外界的控制。"
+      },
+      "action_to_thinking": {
+        "keyword": "战略",
+        "description": "我通过冷静的观察和掌握核心知识来巩固我的权力和独立性。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "深思",
+        "description": "我深入探索内心最隐秘的情感和宇宙的真相，保持理性与独特的距离。"
+      }
+    }
+  },
+  {
+    "tritype": "459",
+    "alias": "沉思者",
+    "nodes": {
+      "action_center": "和解的自我",
+      "feeling_center": "表现的自我",
+      "thinking_center": "探究的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "同理",
+        "description": "我沉浸在深刻的情感中，通过理解他人的痛苦来维持内在的平静。"
+      },
+      "action_to_thinking": {
+        "keyword": "抽离",
+        "description": "我退回到自己的精神世界中，通过减少需求和避免冲突来获取安宁。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "深思",
+        "description": "我深入探索内心最隐秘的情感和宇宙的真相，保持理性与独特的距离。"
+      }
+    }
+  },
+  {
+    "tritype": "468",
+    "alias": "说真话者",
+    "nodes": {
+      "action_center": "挑战的自我",
+      "feeling_center": "表现的自我",
+      "thinking_center": "忠诚的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "真实",
+        "description": "我坚持我的独立性与深刻的情感，绝不屈服于外界的控制。"
+      },
+      "action_to_thinking": {
+        "keyword": "防御",
+        "description": "我随时保持警惕并主动出击，以防止任何人控制我或让我陷入危险。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "怀疑",
+        "description": "我在坚持自我独特性与寻求外界支持之间摇摆，情感充满矛盾与反思。"
+      }
+    }
+  },
+  {
+    "tritype": "469",
+    "alias": "探索者",
+    "nodes": {
+      "action_center": "和解的自我",
+      "feeling_center": "表现的自我",
+      "thinking_center": "忠诚的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "同理",
+        "description": "我沉浸在深刻的情感中，通过理解他人的痛苦来维持内在的平静。"
+      },
+      "action_to_thinking": {
+        "keyword": "依恋",
+        "description": "只要能不断消除内心的不安，我就可以守住属于自己的容身之处。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "怀疑",
+        "description": "我在坚持自我独特性与寻求外界支持之间摇摆，情感充满矛盾与反思。"
+      }
+    }
+  },
+  {
+    "tritype": "478",
+    "alias": "信使",
+    "nodes": {
+      "action_center": "挑战的自我",
+      "feeling_center": "表现的自我",
+      "thinking_center": "享受的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "真实",
+        "description": "我坚持我的独立性与深刻的情感，绝不屈服于外界的控制。"
+      },
+      "action_to_thinking": {
+        "keyword": "开拓",
+        "description": "我以无畏的行动力和积极的愿景去探索新事物，拒绝受到任何限制。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "灵感",
+        "description": "我用天马行空的想象力和独特的美感来点缀生活，逃避平凡与单调。"
+      }
+    }
+  },
+  {
+    "tritype": "479",
+    "alias": "温柔灵魂",
+    "nodes": {
+      "action_center": "和解的自我",
+      "feeling_center": "表现的自我",
+      "thinking_center": "享受的自我"
+    },
+    "dynamics": {
+      "action_to_feeling": {
+        "keyword": "同理",
+        "description": "我沉浸在深刻的情感中，通过理解他人的痛苦来维持内在的平静。"
+      },
+      "action_to_thinking": {
+        "keyword": "逃避",
+        "description": "我通过寻找快乐和多种可能性来转移注意力，避免面对冲突与不适。"
+      },
+      "feeling_to_thinking": {
+        "keyword": "灵感",
+        "description": "我用天马行空的想象力和独特的美感来点缀生活，逃避平凡与单调。"
+      }
+    }
+  }
+]

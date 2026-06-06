@@ -1,0 +1,32 @@
+[
+  {
+    "id": "complex",
+    "title": "复杂问题应对",
+    "description": "衡量您在需要深入思考、面对社会议题等复杂问题时如何反应与应对。",
+    "questionIds": [82, 83]
+  },
+  {
+    "id": "discomfort",
+    "title": "不适情境应对",
+    "description": "衡量您在不想面对的情境、或感到负担与压力的距离感面前如何反应与应对。",
+    "questionIds": [84, 85]
+  },
+  {
+    "id": "dependent",
+    "title": "依赖型应对",
+    "description": "衡量您在疲惫或痛苦时是否依赖外物或他人排解，以及对「与众不同」的恐惧程度。",
+    "questionIds": [86, 87]
+  },
+  {
+    "id": "belief",
+    "title": "信念冲突应对",
+    "description": "衡量您面对信仰、价值信念冲突，以及来自父母的过度干涉时如何反应与应对。",
+    "questionIds": [88, 89]
+  },
+  {
+    "id": "interpersonal",
+    "title": "人际价值冲突",
+    "description": "衡量您与价值观截然不同的人相处、以及面对陌生人主动接触时的反应与应对。",
+    "questionIds": [90, 91]
+  }
+]
