@@ -84,17 +84,6 @@
   line-height: 1.75;
 }
 
-/* 强制分页：WeasyPrint / 浏览器打印均在此硬切页，禁止引擎猜测连载 */
-.pdf-page-break {
-  page-break-before: always !important;
-  break-before: page !important;
-}
-
-.report-document > .report-page:first-child.pdf-page-break {
-  page-break-before: auto !important;
-  break-before: auto !important;
-}
-
 /* —— 封面 M00 —— */
 
 .report-cover {
@@ -1220,8 +1209,7 @@
 
   .report-page.report-core-self {
     page-break-after: always;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: auto;
   }
 
   .report-page.report-stress {
@@ -1273,15 +1261,13 @@
 .report-page.report-core-self {
   width: 210mm;
   max-width: 210mm;
-  height: 297mm;
-  max-height: 297mm;
   min-height: 297mm;
+  height: auto;
   padding: 5mm 7mm 4mm;
   font-size: 10.5px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .report-core-self__main {
@@ -1291,7 +1277,6 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 2mm;
-  overflow: hidden;
 }
 
 .report-core-self__missing {
@@ -1301,47 +1286,11 @@
 }
 
 .report-core-self__surface {
-  margin-top: 4mm;
-  flex-shrink: 0;
+  margin-top: 5mm;
 }
 
 .report-core-self__inner {
-  margin-top: 4mm;
-  flex-shrink: 0;
-}
-
-/* 第 5 页：大段正文收紧行高与字号，预留约 10% 安全边距 */
-.report-page.report-core-self .ppap-core-self__quote {
-  font-size: 9.5px;
-  line-height: 1.35;
-}
-
-.report-page.report-core-self .ppap-core-self__desc {
-  font-size: 9.5px;
-  line-height: 1.35;
-}
-
-.report-page.report-core-self .ppap-core-self__tags {
-  font-size: 9px;
-  line-height: 1.32;
-}
-
-.report-page.report-core-self .ppap-surface-ego__list li,
-.report-page.report-core-self .ppap-surface-ego__text,
-.report-page.report-core-self .ppap-surface-ego__defense-text,
-.report-page.report-core-self .ppap-inner-self__subtitle,
-.report-page.report-core-self .ppap-inner-self__text {
-  font-size: 9.5px;
-  line-height: 1.35;
-}
-
-/* 第 5 页：Flex 双栏/三栏禁止跨页垂直切碎 */
-.report-page.report-core-self .ppap-core-self__body,
-.report-page.report-core-self .ppap-surface-ego__grid,
-.report-page.report-core-self .ppap-inner-self__top,
-.report-page.report-core-self .ppap-inner-self__bottom {
-  page-break-inside: avoid;
-  break-inside: avoid;
+  margin-top: 5mm;
 }
 
 .report-core-self__footer {
@@ -2496,16 +2445,6 @@
     break-after: page;
   }
 
-  .pdf-page-break {
-    page-break-before: always !important;
-    break-before: page !important;
-  }
-
-  .report-document > .report-page:first-child.pdf-page-break {
-    page-break-before: auto !important;
-    break-before: auto !important;
-  }
-
   /* 第 1 页：封面说明区背景 */
   .report-page.report-cover {
     width: 210mm;
@@ -2564,25 +2503,6 @@
   .report-document:has(.report-overview) {
     max-width: none;
     width: 210mm;
-  }
-
-  /* 第 5 页：刚性 A4，与第 6 页边界隔离 */
-  .report-page.report-core-self {
-    width: 210mm;
-    height: 297mm;
-    max-height: 297mm;
-    min-height: 297mm;
-    page-break-inside: avoid;
-    break-inside: avoid;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .report-core-self__main {
-    flex: 1;
-    min-height: 0;
-    overflow: hidden;
   }
 
   /* 第 6 页：固定 A4 高度，打印与屏幕一致（WYSIWYG） */

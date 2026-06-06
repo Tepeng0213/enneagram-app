@@ -18,7 +18,7 @@ interface Props {
 
 export function ReportCoverPage({ data }: Props) {
   return (
-    <article className="report-page report-cover pdf-page-break" aria-label="报告封面">
+    <article className="report-page report-cover" aria-label="报告封面">
       <header className="report-cover__brand">
         <div className="report-cover__logo" aria-hidden>
           <svg viewBox="0 0 48 48" width="48" height="48" fill="none">

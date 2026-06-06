@@ -18,7 +18,7 @@ export function ReportTritypePage({ facts }: Props) {
   const diagram = useMemo(() => buildTritypeDiagram(facts), [facts]);
 
   return (
-    <article className="report-page report-tritype pdf-page-break" aria-label="三中心三角关系">
+    <article className="report-page report-tritype" aria-label="三中心三角关系">
       <ReportPageHeader {...standardReportPageHeaderProps(facts)} />
 
       <section className="report-tritype__block">

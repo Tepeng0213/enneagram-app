@@ -20,7 +20,7 @@ export function ReportCoreSelfPage({ facts }: Props) {
   const innerEntry = lookupInnerSelf(facts.coreType);
 
   return (
-    <article className="report-page report-core-self pdf-page-break" aria-label="核心自我、表面自我与内在自我">
+    <article className="report-page report-core-self" aria-label="核心自我、表面自我与内在自我">
       <ReportPageHeader {...standardReportPageHeaderProps(facts)} />
 
       <div className="report-core-self__main">

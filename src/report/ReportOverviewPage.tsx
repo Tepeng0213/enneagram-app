@@ -17,7 +17,7 @@ interface Props {
 
 export function ReportOverviewPage({ facts }: Props) {
   return (
-    <article className="report-page report-overview pdf-page-break" aria-label="九型总览">
+    <article className="report-page report-overview" aria-label="九型总览">
       <ReportPageHeader {...standardReportPageHeaderProps(facts)} />
 
       <div className="report-overview__types">

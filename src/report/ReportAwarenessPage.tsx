@@ -12,7 +12,7 @@ interface Props {
 /** 报告第 6 页：表面/内在自我冰山 + 意识地图幸福率 */
 export function ReportAwarenessPage({ facts }: Props) {
   return (
-    <article className="report-page report-awareness pdf-page-break" aria-label="觉察与意识地图分析">
+    <article className="report-page report-awareness" aria-label="觉察与意识地图分析">
       <ReportPageHeader {...standardReportPageHeaderProps(facts)} />
 
       <div className="report-awareness__main">

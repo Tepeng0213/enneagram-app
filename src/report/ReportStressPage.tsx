@@ -13,7 +13,7 @@ interface Props {
 /** 报告第 7 页：压力应对（跳过第 6 页） */
 export function ReportStressPage({ facts }: Props) {
   return (
-    <article className="report-page report-stress pdf-page-break" aria-label="压力应对方向">
+    <article className="report-page report-stress" aria-label="压力应对方向">
       <ReportPageHeader {...standardReportPageHeaderProps(facts)} />
 
       <div className="report-stress__main">
