@@ -1,9 +1,10 @@
-# Profigram 九型测试（自建网页）
+# enneagram-app
+
+Profigram 九型人格评测与 AI 自我分析洞察报告（Vite 6 + React 19 + PWA）。
 
 ## 本地运行
 
 ```bash
-cd web
 npm install
 npm run dev
 ```
@@ -13,11 +14,11 @@ npm run dev
 ## 流程说明
 
 1. 输入姓名 → **开始测试**
-2. 81 题，每题 1～5 分
+2. 91 题，每题 1～5 分
 3. **各型分数** + 三大中心初算
 4. 若某中心 **两型并列最高** → **中心确认**（二选一文案）
 5. 若 **三型并列最高** → 自动取中间号（体 9 / 心 3 / 脑 6），无需答题
-6. **测试完成** 页显示主型与三大中心最终结果
+6. 提交后自动生成洞察报告 PDF 并存入 Google 云端硬盘
 
 ## 规则实现
 
@@ -25,11 +26,19 @@ npm run dev
 
 ## 保存到 Google 表格
 
-见上级目录说明：**`../profigram_export/SHEET_WEB_SETUP.md`**
+配置 `WebAppSubmit.gs` 部署为 Google Apps Script 网页应用，复制 `.env.example` 为 `.env` 并填写 URL 与密钥，然后重启 `npm run dev`。
 
-简要步骤：试算表 Apps Script 部署 `WebAppSubmit.gs` → 配置 `web/.env` → 重启 `npm run dev`。
+## PWA / 添加到主屏幕
 
-## 下一步
+见 `docs/PWA_SETUP.md`。
 
-- 部署 Firebase Hosting / Cloud Run
-- 报告页与 PDF
+## 生产构建
+
+```bash
+npm run build
+npm run preview
+```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
