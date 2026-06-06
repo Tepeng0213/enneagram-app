@@ -17,7 +17,7 @@ export function ReportPpapPage({ facts }: Props) {
   const centerCols = useMemo(() => buildCenterColumns(facts), [facts]);
 
   return (
-    <article className="report-page report-ppap" aria-label="PPAP综合摘要">
+    <article className="report-page report-ppap pdf-page-break" aria-label="PPAP综合摘要">
       <ReportPageHeader {...standardReportPageHeaderProps(facts)} />
 
       <section className="report-ppap__chart-block">
